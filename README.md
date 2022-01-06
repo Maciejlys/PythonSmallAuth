@@ -15,7 +15,7 @@ all users will be wiped clean
 
 I think I learned alot while doing this projcet, and thats why \
 if I had to redo it I would definitely make sure that the code\
-is split up and easier reusable.
+is split up and easier to reuse.
 
 # available endpoints
 
