@@ -51,15 +51,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/login",
-					"protocol": "http",
+					"raw": "https://python-small-auth.herokuapp.com/login",
+					"protocol": "https",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"python-small-auth",
+						"herokuapp",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"login"
 					]
@@ -101,15 +99,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/users",
-					"protocol": "http",
+					"raw": "https://python-small-auth.herokuapp.com/users",
+					"protocol": "https",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"python-small-auth",
+						"herokuapp",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"users"
 					]
