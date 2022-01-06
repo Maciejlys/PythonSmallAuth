@@ -1,0 +1,6 @@
+###### Requirements without Version Specifiers ######
+flask
+hashlib
+jwt
+datetime
+os

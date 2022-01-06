@@ -2,6 +2,9 @@ from flask import Flask, request, make_response, jsonify
 import hashlib
 import jwt
 import datetime
+import os
+
+port = os.environ.get('PORT', 5000)
 
 app = Flask(__name__)
 
@@ -93,4 +96,5 @@ def getUsers():
 
 
 if __name__ == '__main__':
-    app.run()
+    print(port)
+    app.run(port=port)
