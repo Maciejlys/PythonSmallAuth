@@ -4,7 +4,7 @@ import jwt
 import datetime
 import os
 
-port = os.environ.get('PORT', 5000)
+port = int(os.environ.get('PORT', 5000))
 
 app = Flask(__name__)
 
@@ -96,5 +96,4 @@ def getUsers():
 
 
 if __name__ == '__main__':
-    print(port)
-    app.run(port=port)
+    app.run(host='0.0.0.0', debug=True, port=port)
