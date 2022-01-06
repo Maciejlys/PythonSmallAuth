@@ -84,5 +84,13 @@ def verify():
         return make_response("unathorized"), 400
 
 
+@app.route('/users', methods=['GET'])
+def getUsers():
+    userNames = []
+    for key in users.keys():
+        userNames.append(key)
+    return make_response(jsonify(userNames)), 200
+
+
 if __name__ == '__main__':
     app.run()

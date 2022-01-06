@@ -74,7 +74,7 @@
 				"header": [
 					{
 						"key": "token",
-						"value": "test",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiTWFjaWVqIiwiaWF0IjoxNjQxNDc5ODU1fQ.lpU7iEqe9oxZaeaUTl2uzRYLOoIn4NmUYhQYQoLLEVg",
 						"type": "default"
 					}
 				],
@@ -90,6 +90,28 @@
 					"port": "5000",
 					"path": [
 						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users"
 					]
 				}
 			},
