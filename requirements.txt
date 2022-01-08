@@ -2,3 +2,4 @@
 flask
 pyjwt
 gunicorn
+flask-cors

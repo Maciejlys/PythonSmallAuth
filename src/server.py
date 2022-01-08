@@ -1,10 +1,14 @@
 from flask import Flask, request, make_response, jsonify
+from flask_cors import CORS, cross_origin
 import hashlib
 import jwt
 import datetime
 import os
 
+
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 users = {}
 usersTokens = {}
@@ -28,6 +32,7 @@ def registerUser(user):
 
 
 @app.route('/register', methods=['POST'])
+@cross_origin()
 def register():
     post_data = request.get_json()
     try:
@@ -62,6 +67,7 @@ def loginUser(user):
 
 
 @app.route('/login', methods=['POST'])
+@cross_origin()
 def login():
     post_data = request.get_json()
     try:
@@ -73,6 +79,7 @@ def login():
 
 
 @app.route('/verify', methods=['POST'])
+@cross_origin()
 def verify():
     token = request.headers['token']
     try:
@@ -86,6 +93,7 @@ def verify():
 
 
 @app.route('/users', methods=['GET'])
+@cross_origin()
 def getUsers():
     userNames = []
     for key in users.keys():
