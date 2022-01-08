@@ -74,7 +74,6 @@ def login():
         validateLoginBody(post_data)
         return loginUser(post_data)
     except Exception as err:
-        print(err)
         return make_response({"error": str(err)}), 400
 
 
