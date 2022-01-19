@@ -6,7 +6,6 @@ import jwt
 from datetime import datetime
 import os
 from dotenv import load_dotenv
-import os
 
 load_dotenv('./.env')
 
@@ -144,4 +143,5 @@ def getUsers():
 
 if __name__ == '__main__':
     port = os.environ.get('PORT', 5000)
+    db.create_all()
     app.run(debug=False, host='0.0.0.0', port=port)
