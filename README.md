@@ -5,6 +5,10 @@ I didn't use any database since its supposed to be small project\
 I just hold all registered users in dictionary, so on server restart\
 all users will be wiped clean
 
+# TODO
+
+- [x] database support
+
 # What was used in this project?
 
 - flask
