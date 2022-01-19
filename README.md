@@ -1,9 +1,9 @@
 # About the project
 
 Small authorization app that manages registering and loging in.\
-I didn't use any database since its supposed to be small project\
+<del>I didn't use any database since its supposed to be small project\
 I just hold all registered users in dictionary, so on server restart\
-all users will be wiped clean
+all users will be wiped clean</del>
 
 # TODO
 
