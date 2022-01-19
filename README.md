@@ -14,6 +14,9 @@ all users will be wiped clean</del>
 - flask
 - pyjwt
 - hashlib
+- flask-sqlalchemy
+- psycopg2
+- python-dotenv
 
 # What would I change?
 
