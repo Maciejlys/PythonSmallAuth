@@ -12,7 +12,7 @@ load_dotenv('./.env')
 app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DB')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -143,5 +143,5 @@ def getUsers():
 
 if __name__ == '__main__':
     port = os.environ.get('PORT', 5000)
-    # db.create_all()
+    db.create_all()
     app.run(debug=False, host='0.0.0.0', port=port)
