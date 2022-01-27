@@ -1,2 +1,2 @@
-from server import db
-db.create_all()
+import os
+print(os.environ.get('DB'))

@@ -12,7 +12,9 @@ load_dotenv('./.env')
 app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DB')
+db_uri = os.environ.get('DATABASE_URL')
+replaced_uri = 'postgresql' + db_uri[8:len(db_uri)]
+app.config['SQLALCHEMY_DATABASE_URI'] = replaced_uri
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
